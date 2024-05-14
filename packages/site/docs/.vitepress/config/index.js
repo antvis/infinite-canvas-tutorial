@@ -7,6 +7,7 @@ import { en } from './en';
 import { zh } from './zh';
 
 export default defineConfig({
+  base: '/infinite-canvas-tutorial/',
   markdown: {
     config: (md) => {
       md.use(implicitFigures, {
