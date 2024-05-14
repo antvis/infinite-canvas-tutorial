@@ -1,0 +1,9 @@
+coverage
+es
+lib
+dist
+node_modules
+examples
+rust
+__tests__
+packages/site/docs/.vitepress

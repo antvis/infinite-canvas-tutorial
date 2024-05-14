@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+esm
+lib
+dist
+examples/dist
+rust/target
+coverage
+cache
+
+# tests
+__tests__/integration/**/*-diff.png
+__tests__/integration/**/*-actual.png
+test-results
+playwright-report

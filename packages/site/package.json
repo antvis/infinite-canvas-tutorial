@@ -1,0 +1,43 @@
+{
+  "name": "@infinite-canvas-tutorial/site",
+  "description": "An infinite canvas tutorial",
+  "type": "module",
+  "keywords": [
+    "whiteboard",
+    "infinite canvas",
+    "webgl",
+    "webgpu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoiver/infinite-canvas-tutorial"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "xiaoiver",
+    "url": "https://github.com/xiaoiver"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0",
+    "@infinite-canvas-tutorial/lesson1": "workspace:*",
+    "@infinite-canvas-tutorial/lesson2": "workspace:*",
+    "@infinite-canvas-tutorial/lesson3": "workspace:*",
+    "@infinite-canvas-tutorial/lesson4": "workspace:*",
+    "@infinite-canvas-tutorial/lesson5": "workspace:*",
+    "@infinite-canvas-tutorial/lesson6": "workspace:*",
+    "@infinite-canvas-tutorial/lesson7": "workspace:*",
+    "@infinite-canvas-tutorial/lesson8": "workspace:*"
+  },
+  "devDependencies": {
+    "vue": "^3.0.0",
+    "vitepress": "^1.0.1",
+    "genji-theme-vitepress": "^0.2.1",
+    "markdown-it-implicit-figures": "latest",
+    "stats.js": "^0.17.0"
+  }
+}

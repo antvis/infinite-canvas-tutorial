@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "description": "An infinite canvas tutorial",
+  "keywords": [
+    "infinite canvas",
+    "tutorial",
+    "webgl",
+    "webgpu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoiver/infinite-canvas-tutorial"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "xiaoiver",
+    "url": "https://github.com/xiaoiver"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "build": "pnpm -r run build"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "case-police": "^0.5.14",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jest": "24.3.6",
+    "husky": "^7.0.4",
+    "lint-staged": "^10.5.4",
+    "markdownlint-cli": "^0.32.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vue-eslint-parser": "^9.4.2"
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "markdownlint --fix",
+      "case-police --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx,tsx,ts,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
